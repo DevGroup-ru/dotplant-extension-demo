@@ -1,0 +1,41 @@
+{
+    "name": "vendor-name/extension-name",
+    "description": "There is an extension description here",
+    "type": "dotplant-extension",
+    "keywords": ["yii2", "dotplant", "new-tag", "another-tag"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Vendor Full Name",
+            "email": "vendor@email.here"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "yiisoft/yii2": "~2.0.0",
+        "devgroup/yii2-extensions-manager": "dev-master",
+        "another-vendor/required-package": "~1.2.3"
+    },
+    "require-dev": {
+        "another-vendor/required-dev-package": "^2.3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "VendorNameSpace\\ExtensionNameSpace\\": "src/"
+        }
+    },
+    "extra": {
+        "yii2-extension": {
+            "name": "Package name",
+            "name_ru": "Russian package name",
+            "iconUrl": "",
+            "description_ru": "Russian description"
+        },
+        "migrationPath": [
+            "src/migrations"
+        ],
+        "configurables": "src/configurables.php",
+        "translationCategory": "my-awesome-dotplant-extension"
+    }
+}
