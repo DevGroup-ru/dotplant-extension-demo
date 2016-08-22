@@ -76,7 +76,7 @@ class Configuration extends BaseConfigurationModel
                 ],
             ],
             'modules' => [
-                'content' => [
+                'moduleName' => [
                     'class' => Module::class,
                     'someProperty' => (bool) $this->someProperty
                 ]
