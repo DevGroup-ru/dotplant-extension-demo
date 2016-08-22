@@ -20,7 +20,7 @@ class Configuration extends BaseConfigurationModel
         parent::__construct($attributes, $config);
         /** @var Module $module */
         $module = Module::module();
-        $this->itemsPerPage = $module->someProperty;
+        $this->someProperty = $module->someProperty;
     }
 
     /**
