@@ -13,7 +13,7 @@ class Configuration extends BaseConfigurationModel
      */
     public function getModuleClassName()
     {
-        Module::className();
+        return Module::className();
     }
 
     /**
