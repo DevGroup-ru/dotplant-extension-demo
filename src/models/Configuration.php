@@ -9,27 +9,20 @@ use Yii;
 class Configuration extends BaseConfigurationModel
 {
     /**
-     * @param array $config
+     * @inheritdoc
      */
-    public function __construct($config = [])
+    public function getModuleClassName()
     {
-        $attributes = [
-            'someProperty'
-        ];
-
-        parent::__construct($attributes, $config);
-        /** @var Module $module */
-        $module = Module::module();
-        $this->someProperty = $module->someProperty;
+        Module::className();
     }
 
     /**
      * @inheritdoc
      */
-    public function rules()
+    public function getConfigurableAttributes()
     {
         return [
-            [['someProperty'], 'boolean'],
+            'someProperty' => [['boolean']],
         ];
     }
 
