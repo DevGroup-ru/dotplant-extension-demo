@@ -19,10 +19,10 @@ class Configuration extends BaseConfigurationModel
     /**
      * @inheritdoc
      */
-    public function getConfigurableAttributes()
+    public function rules()
     {
         return [
-            'someProperty' => [['boolean']],
+            [['someProperty'], 'boolean'],
         ];
     }
 
