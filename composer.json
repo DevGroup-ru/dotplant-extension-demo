@@ -18,6 +18,10 @@
         "another-vendor/required-package": "~1.2.3"
     },
     "require-dev": {
+        "codeception/codeception": "2.2.*",        
+        "se/selenium-server-standalone": "^2.53",
+        "yiisoft/yii2-faker": "^2.0",
+        "yiisoft/yii2-codeception": "^2.0",
         "another-vendor/required-dev-package": "^2.3.4"
     },
     "autoload": {

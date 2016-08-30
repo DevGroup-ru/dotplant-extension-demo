@@ -1,0 +1,36 @@
+actor: Tester
+paths:
+    tests: codeception
+    log: codeception/_output
+    data: codeception/_data
+    support: codeception/_support
+    envs: codeception/_envs
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+modules:
+    config:
+        Yii2:
+            configFile: 'config/common.php'
+config:
+    # the entry script URL (with host info) for functional and acceptance tests
+    # PLEASE ADJUST IT TO THE ACTUAL ENTRY SCRIPT URL
+    test_entry_url: http://localhost:8080/index-test.php
+
+# To enable code coverage:
+#coverage:
+#    #c3_url: http://localhost:8080/index-test.php/
+#    enabled: true
+#    #remote: true
+#    #remote_config: '../tests/codeception.yml'
+#    whitelist:
+#        include:
+#            - ../src/*
+#    blacklist:
+#        include:
+#            - ../src/messages/*
+#            - ../src/migrations/*
