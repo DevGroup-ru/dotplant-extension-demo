@@ -16,7 +16,7 @@ class Module extends \yii\base\Module
     {
         $module = \Yii::$app->getModule('extensionName');
         if ($module === null) {
-            $module = $module = \Yii::createObject(self::class, ['extensionName']);
+            $module = \Yii::createObject(self::class, ['extensionName']);
         }
         return $module;
     }
